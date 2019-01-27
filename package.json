@@ -4,6 +4,7 @@
   "description": "Wxpensify App",
   "main": "app.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "jest --colors",
     "test:watch": "jest --watchAll --colors",
     "test:coverage": "npm test -- --coverage --colors",
@@ -11,7 +12,8 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env=production",
     "live-server": "live-server public/",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "moser-ss",
   "license": "ISC",
@@ -23,6 +25,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "^0.28.4",
+    "express": "^4.16.4",
     "live-server": "^1.2.0",
     "moment": "^2.23.0",
     "node-sass": "^4.9.3",
