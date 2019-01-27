@@ -1,6 +1,4 @@
 node_modules/
 coverage/
-public/styles.css.map
-public/styles.css
-public/bundle.js.map
-public/bundle.js
+public/dist/
+
