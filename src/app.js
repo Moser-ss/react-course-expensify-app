@@ -10,11 +10,6 @@ import 'normalize.css/normalize.css';
 
 const store = configureStore();
 
-store.dispatch(addExpense({description: 'gas bill', amount: 400, createdAt:100}))
-store.dispatch(addExpense({description: 'water bill', amount: 500, createdAt: 1}))
-store.dispatch(addExpense({description: 'rent', amount: 3100, createdAt: 10}))
-
-
 const jsx =(
   <Provider store={store}>
     <AppRouter />
