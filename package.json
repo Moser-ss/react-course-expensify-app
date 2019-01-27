@@ -1,0 +1,66 @@
+{
+  "name": "expensify-app",
+  "version": "0.1.0",
+  "description": "Wxpensify App",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --colors",
+    "test:watch": "jest --watchAll --colors",
+    "test:coverage": "npm test -- --coverage --colors",
+    "test:coverage:open": "npm run test:coverage && open ./coverage/lcov-report/index.html",
+    "build": "webpack",
+    "live-server": "live-server public/",
+    "dev-server": "webpack-dev-server"
+  },
+  "author": "moser-ss",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "^0.28.4",
+    "live-server": "^1.2.0",
+    "moment": "^2.23.0",
+    "node-sass": "^4.9.3",
+    "normalize.css": "^7.0.0",
+    "react": "^16.4.2",
+    "react-dates": "^18.4.0",
+    "react-dom": "^16.4.2",
+    "react-modal": "^2.2.2",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.18.2",
+    "uuid": "^3.3.2",
+    "validator": "^9.4.1",
+    "webpack": "3.1.0",
+    "webpack-dev-server": "2.5.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^23.6.0",
+    "raf": "^3.4.1",
+    "react-test-renderer": "^16.7.0"
+  },
+  "jest": {
+    "verbose": true,
+    "roots": [
+      "<rootDir>/"
+    ],
+    "setupFiles": [
+      "raf/polyfill",
+      "<rootDir>/test/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"]
+  }
+}
