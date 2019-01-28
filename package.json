@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/server.js",
     "test": "jest --colors",
-    "test:watch": "jest --watchAll --colors",
+    "test:watch": "jest --watch --colors",
     "test:coverage": "npm test -- --coverage --colors",
     "test:coverage:open": "npm run test:coverage && open ./coverage/lcov-report/index.html",
     "build:dev": "webpack",
@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "moment": "^2.23.0",
+    "numeral": "^2.0.6",
     "react": "^16.4.2",
     "react-dates": "^18.4.0",
     "react-dom": "^16.4.2",
