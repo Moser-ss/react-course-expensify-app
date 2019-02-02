@@ -2,32 +2,38 @@
 
 exports[`Should render 0 expenses 1`] = `
 <div>
-  <p>
+  <h1>
     Viewing 
     0
-     expenses
-  </p>
+     
+    expenses
+     
+  </h1>
 </div>
 `;
 
 exports[`Should render 1 expenses 1`] = `
 <div>
-  <p>
+  <h1>
     Viewing 
     1
-     expense
-     totalling €1,95
-  </p>
+     
+    expense
+     
+    totalling €6,00
+  </h1>
 </div>
 `;
 
 exports[`Should render multiples expenses 1`] = `
 <div>
-  <p>
+  <h1>
     Viewing 
-    3
-     expenses
-     totalling €704,95
-  </p>
+    14
+     
+    expenses
+     
+    totalling €13 090,20
+  </h1>
 </div>
 `;

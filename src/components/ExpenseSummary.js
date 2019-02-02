@@ -6,25 +6,25 @@ import numeral from 'numeral'
 import 'numeral/locales.js'
 numeral.locale('pt-pt')
 
-export const ExpenseSummary = (props) => {
-  const numberExpenses = props.expenses.length
+export const ExpenseSummary = ({ expensesCount, expensesTotal}) => {
   let totalMessage
-  if(numberExpenses > 0){
-    const total = numeral(selectExpensesTotal(props.expenses) / 100 ).format('$0,0.00')
+  if(expensesCount > 0){
+    const total = numeral(expensesTotal / 100 ).format('$0,0.00')
     totalMessage = `totalling ${total}`
   }
+  const expenseWord = expensesCount === 1 ? 'expense': 'expenses'
   return (  <div>
-    <p>Viewing {numberExpenses} 
-    {numberExpenses === 1 ?' expense': ' expenses'} 
-    {totalMessage && ` ${totalMessage}` }</p>
+    <h1>Viewing {expensesCount} {expenseWord} {totalMessage && totalMessage}</h1>
   </div>)
 }
 
 
 
 const mapStateToProps = (state) => {
+  const visibleExpenses = selectExpenses(state.expenses, state.filters)
   return {
-    expenses: selectExpenses(state.expenses, state.filters)
+    expensesCount: visibleExpenses.length,
+    expensesTotal: selectExpensesTotal(visibleExpenses)
   };
 };
 
