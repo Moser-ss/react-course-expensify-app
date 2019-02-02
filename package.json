@@ -12,7 +12,7 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env=production",
     "dev-server": "webpack-dev-server",
-    "heroku-postbuild": "npm run build:prod"
+    "heroku-postbuild": "npm test && npm run build:prod"
   },
   "author": "moser-ss",
   "license": "ISC",
