@@ -4,10 +4,11 @@ import {
   startAddExpense,
   addExpense,
   removeExpense,
+  startRemoveExpense,
   editExpense,
+  startEditExpense,
   setExpenses,
-  startSetExpenses,
-  startRemoveExpense
+  startSetExpenses
 } from '../../src/actions/expenses';
 import expenses from '../data/expenses'
 import database from '../../src/firebase/firebase'
@@ -142,4 +143,23 @@ test('should remove expense from firebase', async () => {
   const snapshot = await database.ref(`expenses/${actions[0].id}`).once('value')
 
   expect(snapshot.exists()).toBeFalsy()
+})
+
+test('should edit expense from firebase', async () => {
+  const store = createMockStore({})
+  const id = expenses[0].id
+  const updates = {
+    note: 'New note to update',
+    amount: 200
+  }
+  await store.dispatch(startEditExpense(id, updates))
+  const actions = store.getActions()
+  expect(actions[0]).toEqual({
+    type:'EDIT_EXPENSE',
+    id,
+    updates
+  })
+  const snapshot = await database.ref(`expenses/${id}`).once('value')
+
+  expect(snapshot.val()).toMatchObject(updates)
 })
