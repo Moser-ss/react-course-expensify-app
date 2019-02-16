@@ -6,7 +6,8 @@ import {
   removeExpense,
   editExpense,
   setExpenses,
-  startSetExpenses
+  startSetExpenses,
+  startRemoveExpense
 } from '../../src/actions/expenses';
 import expenses from '../data/expenses'
 import database from '../../src/firebase/firebase'
@@ -128,4 +129,17 @@ test('should fetch exepenses from firebase', async () => {
   const actions = store.getActions()
   expect(actions[0].type).toBe('SET_EXPENSES')
   expect(actions[0].expenses).toIncludeSameMembers(expenses)
+})
+
+test('should remove expense from firebase', async () => {
+  const store = createMockStore({})
+  await store.dispatch(startRemoveExpense(expenses[0]))
+  const actions = store.getActions()
+  expect(actions[0]).toEqual({
+    type:'REMOVE_EXPENSE',
+    id: expenses[0].id
+  })
+  const snapshot = await database.ref(`expenses/${actions[0].id}`).once('value')
+
+  expect(snapshot.exists()).toBeFalsy()
 })
