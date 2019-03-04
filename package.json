@@ -33,6 +33,7 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "@babel/polyfill": "^7.2.5",
     "babel-cli": "6.24.1",
     "babel-core": "6.25.0",
     "babel-loader": "7.1.1",
