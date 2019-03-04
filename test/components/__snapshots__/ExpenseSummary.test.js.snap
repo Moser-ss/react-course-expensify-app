@@ -1,39 +1,111 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render 0 expenses 1`] = `
-<div>
-  <h1>
-    Viewing 
-    0
-     
-    expenses
-     
-  </h1>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        0
+      </span>
+       
+      expenses
+       
+       
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/add"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Should render 1 expenses 1`] = `
-<div>
-  <h1>
-    Viewing 
-    1
-     
-    expense
-     
-    totalling €6,00
-  </h1>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       
+      expense
+       
+      totalling
+       
+      <span>
+        €6,00
+      </span>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/add"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Should render multiples expenses 1`] = `
-<div>
-  <h1>
-    Viewing 
-    14
-     
-    expenses
-     
-    totalling €13 090,20
-  </h1>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        14
+      </span>
+       
+      expenses
+       
+      totalling
+       
+      <span>
+        €13 090,20
+      </span>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/add"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
