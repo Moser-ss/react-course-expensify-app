@@ -3,7 +3,7 @@ node_js:
   - "10"
 addons:
   sonarcloud:
-    organization: "Moser-ss_devops-app"
+    organization: "moser-ss-github"
     token:
         secure: "tc5Hnw2BX1bJHveaawyZF8CwwwuketJC9sqYv23DYPW1MaVqJoK5qhqdzCcGAMo6HhQeCUkeS4DWF0zvh4pttlVbNk/XIdzX7eabIpFs1yKFIAQcbxt4Dy5mdCAJ0aLNOcRPjG3Gasqjqecg/6/CAnnqgxXexS8INqC3eTQkAbB6YktZgovf6Bh/kvZ3ucAK1XUQOO98XvlN+sypao7eFEfLa58H/7e5Rh0dMC+lNpbDaLeePU2NAwaorB82NSpJJPfNi7/0U0ZWlCr/3qGtaKmhpMGGqXc6zqftPVDjbW57RBMHa0FstJUDu60Hn+YEjt1btAvMlrDsK2sIYiJp7kqISHt4byqrGq+y8ygZQbJIo1xqymvwPVHxuaClvjfhxT3hFrQ14sy2vTa9CLIDhKOzTM3MDFe43onONgtXgbPgsiefXKrEZloM/gXzsM5H/gyT1oFzhrnDy9FmHySHp6wB6cUzYV+FAykVe/UKdyDcLPOgOr+N73biDXVwb7wULa1/9UozrdnxpzcN9WSOnNmlCDJuAccU+drApDHjj1UjHhntZoXxtgzUF+vfmAh24dyX8ME4WT5KkjuDkVMTyqaR6IW7yRZqP3LXvoAcKW5TKqFkEtKJpErcm/SvucnacasKP1TTKJTAFqAWcuZEtoeqQLYrTSOCXZCPwjHubMw="
 script:
