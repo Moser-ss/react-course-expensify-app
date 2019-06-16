@@ -1,3 +1,10 @@
 language: node_js
 node_js:
   - "10"
+addons:
+  sonarcloud:
+    organization: "Moser-ss_devops-app" ´
+script:
+  - npm build
+  - npm test
+  - sonar-scanner
