@@ -8,5 +8,5 @@ addons:
         secure: "Ro8zh+DjCtb7eGhVNnhzNP1k6orY6cLviP/EcAf4XwFnNLWN4Z1n4iP+UYW5+0wctW+KB0tMOnuqujcFsdLe7Lx6F9sevEKchc6TRKYX3wQJQ3mCTx1iOPE26aRj+JiNqHih6abYRtJ/dO+McfC1N5hnfPD0IJoDy6BwAc2S90wToVx2VbgxXg0Qdyt3l9woyCqzXyM5pQ3zv5Wzu1AeddUXvjO7ohzGlYU2a1Xg8DAfdfWMxdL629hlgd/PmHFZxtuXPteQnS9igZm+NuL3wRLtPuDmcNrnkNcsvWhDNi1EoLLbCV/ZzmQI5CtPQcGVG6UKupzDhxqpNeXaqATbqomcaYhhaobadMxRmDI31IOSeHAWOljOlhC+BwVZL9KiQBwU+QhCbIUZ5hDje4JOGZCejwf9z74EQbHumcGUg6/Lm77lpLNXgJTM0pxWdx8U2IBTYmWx+a6rhNtodh4DNQVpfU14edcx+SZnlNC4Ey5VhKw4hzaYnDrzoR3Yf6UzoisE+HYRtYcYtyTlUftBLn7wlOXyWbIEKY7/s1OyoXN+0vzc1mSE6kHTsrdJsDH6OTCRScg/P6SQMoZfk7DtTa8Ter+Y9KkzfCLA6ajMkD5UEL8g6q1JeC6ll1i2+i2bIrL5RGP4WA/eEH9HrZVb/IHEKjFK05/WAF2ExoO/lNE="
 script:
   - npm build
-  - npm test
+  - npm run test:coverage
   - sonar-scanner

@@ -3,3 +3,4 @@ coverage/
 public/dist/
 .env.test
 .env.dev
+.scannerwork/
