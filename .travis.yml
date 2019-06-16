@@ -3,7 +3,9 @@ node_js:
   - "10"
 addons:
   sonarcloud:
-    organization: "Moser-ss_devops-app" ´
+    organization: "Moser-ss_devops-app"
+    token:
+      secure: SONAR_TOKEN
 script:
   - npm build
   - npm test
