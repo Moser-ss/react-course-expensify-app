@@ -2,5 +2,6 @@
     "editor.tabSize": 2,
     "eslint.enable": true,
     "jest.pathToConfig": "package.json",
-    "jest.showCoverageOnLoad": true
+    "jest.showCoverageOnLoad": true,
+    "travis.pro": true
 }
