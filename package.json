@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "NODE_ENV=test jest --colors --detectOpenHandles",
+    "test": "NODE_ENV=test jest --colors",
     "test:watch": "npm test -- --watch",
     "test:coverage": "npm test -- --coverage",
     "test:coverage:open": "npm run test:coverage && open ./coverage/lcov-report/index.html",
@@ -24,9 +24,9 @@
     "history": "4.7.2",
     "moment": "2.23.0",
     "numeral": "2.0.6",
-    "react": "16.4.2",
-    "react-dates": "18.4.0",
-    "react-dom": "16.4.2",
+    "react": "16.13.1",
+    "react-dates": "21.8.0",
+    "react-dom": "16.13.1",
     "react-modal": "2.2.2",
     "react-redux": "6.0.0",
     "react-router-dom": "4.2.2",
@@ -36,14 +36,15 @@
     "snyk": "1.319.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
     "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "7.10.2",
+    "@babel/preset-react": "7.10.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.25.0",
     "babel-loader": "7.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1",
     "css-loader": "^1.0.0",
     "dotenv": "^6.2.0",
     "enzyme": "^3.8.0",
@@ -60,6 +61,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.18.2",
     "webpack": "^4.0.0",
+    "webpack-cli": "^3.3.11",
     "webpack-dev-server": "3.1.11"
   },
   "jest": {
@@ -77,7 +79,9 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
     ],
-    "setupTestFrameworkScriptFile": "jest-extended"
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ]
   },
   "snyk": true
 }
