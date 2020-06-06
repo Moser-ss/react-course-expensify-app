@@ -7,6 +7,14 @@ addons:
     token:
         secure: "0m1k74sebB7zizW6zxyOqB7wi/eWAyXmR5iSohVG6XTKG5hjlbDIEo9OA8JHn0AoyRow8kv96vjZkrjYGey2o93+WXWbZQKpyahslg9KK0VUwqp5CEcSe2aY6b6Jd3e4iNsXpRxea2HwQWREU6jntZBBGEQEArYarpmj8fZKpYo80GPdnPNtFhJAb18Bev8u9QD4B5jF7aWPZVCzxtJ1BXuiNKKjAefz+wvi+HqXz02jauzI3X+gJH7upYfrV8IBJ7FBJx7DvriUz9ryWt8SrXxvhz5vefoWZT+blwNJ6t8DgSA/VbDp8PguPpWKZHRvlG84Wp7m6AECli6VxEt8DBzVq4pIoH5SYszXf3lKIaU89BrT82KXs2879AABcYmDJbWr8H0LbBrCtofYGsgtdZ3Zy9uQBCzO0w/bWejYQ1M43R7sJwydk58b549VfW/K5jfyVbuiw2dESxuWdAAcjRxl4U2XceN0US1tAtecE0FzmJD3WRrckFpqzM9x3c1fGL/Fbr0QYhw8s7EpxPfgKmFW9wZKxjUWqLzzB53RP4pYBDv4KvuBLm/EuagK/rJhzivpb2h9HngtvmOSAwQWKizRJHJAEfhqZIfKkt5RYuL/Pt0edAAfROUKJzpc3/T8YdcUXKQ90ID1rUw5JTTBzLPFotmGKfDS4BtkeDmofoY="
 script:
-  - npm build
-  - npm run test:coverage
-  - sonar-scanner
+- npm build:prod
+- npm run test:coverage
+- sonar-scanner
+deploy:
+  provider: heroku
+  api_key:
+    secure: EBaCpHSfpkTtbGGFgk8Q39cWvkB+Vq+VbiSfsrv0vsmwlLc0R8j0ZPj5vhRyy+MAUCOgNPD9xIVdDrpk4OqQu84KcNOfihaK/YNrY/421adSjgGd86RgqA6TENkyarkJq/E1R33MUeG4aPu6LBf9eIxyRkAaZOph3u5xARjRwIbaK+BJNimAaBw3qJ9rdWXsJgxQBBfRzyhEB01iSyyG7XZBs3Eg56rMeDS6AQv6o8WdJMzIpdAEvTLaIDFnUsg0oY7OFXU/lRuxy/qYHOBv9H7dnUFYHASDEka1An8OY210KfgOdDbjwRlAroI05u1wCbZGCCqh6qOVljfQ89O7wn9HogQrDqxMMkQqTC3zQtob992EqxMgkvtdfsXMXf08yu1nPkeakZptoR9hHYWaCUbvt8wg8X00sk6sbZNqgoXiaPvMbQK3KrIiDi5PVgAsPqC3dWWxexKegKibcxmy7Li0BCDH9Vzd1k0QJuobTFWme4IMrKnFEhY1SbogM/UmXkgJ65EP4Bo/wm5V+KmqBWXLZPgxkyuTHFQ/K/GYtPKZGaog6wM5vjM/5QZRkP/kyhqi0uktgd5dY5HcubyylejaiQ32ox/oysRm/x4HbXNO6pzkKRkh2m8A//X0810i1Bph8a16mkqKp5ZSGW06DxOjTTCJ/ONthcnJY/Nu5JQ=
+  app: moser-ss-expensify-app
+  on:
+    repo: Moser-ss/react-course-expensify-app
+  skip_cleanup: true
