@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Wxpensify App",
   "main": "app.js",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "start": "node server/server.js",
     "test": "NODE_ENV=test jest --colors",
@@ -12,7 +15,9 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env=production",
     "dev-server": "webpack-dev-server",
-    "heroku-postbuild": "npm run build:prod"
+    "heroku-postbuild": "npm run build:prod",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "moser-ss",
   "license": "ISC",
@@ -74,6 +79,9 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
     ],
-    "setupTestFrameworkScriptFile": "jest-extended"
-  }
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ]
+  },
+  "snyk": true
 }
