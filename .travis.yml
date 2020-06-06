@@ -10,7 +10,7 @@ addons:
     token:
       secure: viFZUDng5CgudPJQqa8Z/m2MIGUmGXPRSwOjnSKa1Z5oaIaU5iAkhaYhCmTBFESqDvmsrarlJzmtneAZ0roYNRumxsgH7qzPoJ8+0BjhhgRM6t7sWfEketBWP62r7yx1BJETZB6aFFaro1qytBmwYZuoc0iYOysCLmfrgLM6PFdJpXdqc3nqrtdD5PByzyD4VjZ+8ZD7G1q+mUimxI7tn0g6Lc/XYkW8/6hWpraJETB8rtIZaMvXFensCcLpgNqcs15hiYluoTG0swWDx/QRMJy1nwr2/dLig8gWNHUAz9uY3tQLCpVXqeg63deHDpZYHXcGEjkl6yBp6E1rdzWVlILpGuGDG9z/D3YKjN7xrxgkTfRB0hB/93BrhJ9X06ebKZN2s5le7SnPV/OgS9ItstikO5Vo3sDPBRfJ1ifyUrYL1vsuna646kVLhTI32nlyM9SZs8YgMpleMEPEoHAgqvHqryCb25evbgPJeQI064Dz3ZxZX0PXJgDZfI+E5GO9pnC/367FiCuYtSAb1ASIGgCQVpiq1XXZ2CTx75R0ag3ZeaKbGEVVSvFD0FSY/nidUyX57aXaVAZ0k/1ZdFe+kvT/u/UBq+wKFI6OJhTrzqC3OVwQZKjD3/tuz9in4dpVbHwvYv7mA66n37MUN1rlH0wYrDn/9mSFxd2UzD364Zs=
 script:
-- npm build
+- npm run build:prod
 - npm run test:coverage
 - sonar-scanner
 deploy:
@@ -20,4 +20,4 @@ deploy:
   app: moser-ss-expensify-app
   on:
     repo: Moser-ss/react-course-expensify-app
-  skip_cleanup: 'true'
+  skip_cleanup: true

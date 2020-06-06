@@ -28,7 +28,6 @@ exports[`should render ExpenseFrom correctly 1`] = `
     customCloseIcon={null}
     customInputIcon={null}
     date={"1970-01-01T00:00:00.000Z"}
-    dayPickerNavigationInlineStyles={null}
     daySize={39}
     disableScroll={false}
     disabled={false}
@@ -50,7 +49,6 @@ exports[`should render ExpenseFrom correctly 1`] = `
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
-    navPosition="navPositionTop"
     navPrev={null}
     noBorder={false}
     numberOfMonths={1}
@@ -75,8 +73,8 @@ exports[`should render ExpenseFrom correctly 1`] = `
         "homeEnd": "Home and end keys",
         "jumpToNextMonth": "Move forward to switch to the next month.",
         "jumpToPrevMonth": "Move backward to switch to the previous month.",
-        "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-        "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
         "keyboardShortcuts": "Keyboard Shortcuts",
         "leftArrowRightArrow": "Right and left arrow keys",
         "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
@@ -87,7 +85,6 @@ exports[`should render ExpenseFrom correctly 1`] = `
         "pageUpPageDown": "page up and page down keys",
         "questionMark": "Question mark",
         "returnFocusToInput": "Return to the date input field.",
-        "roleDescription": "datepicker",
         "selectFocusedDate": "Select the date in focus.",
         "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
         "upArrowDownArrow": "up and down arrow keys",
@@ -100,9 +97,6 @@ exports[`should render ExpenseFrom correctly 1`] = `
     renderDayContents={null}
     renderMonthElement={null}
     renderMonthText={null}
-    renderNavNextButton={null}
-    renderNavPrevButton={null}
-    renderWeekHeaderElement={null}
     reopenPickerOnClearDate={false}
     required={false}
     screenReaderInputMessage=""
@@ -159,7 +153,6 @@ exports[`should render ExpenseFrom correctly with expense data 1`] = `
     customCloseIcon={null}
     customInputIcon={null}
     date={"1970-01-01T00:00:00.000Z"}
-    dayPickerNavigationInlineStyles={null}
     daySize={39}
     disableScroll={false}
     disabled={false}
@@ -181,7 +174,6 @@ exports[`should render ExpenseFrom correctly with expense data 1`] = `
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
-    navPosition="navPositionTop"
     navPrev={null}
     noBorder={false}
     numberOfMonths={1}
@@ -206,8 +198,8 @@ exports[`should render ExpenseFrom correctly with expense data 1`] = `
         "homeEnd": "Home and end keys",
         "jumpToNextMonth": "Move forward to switch to the next month.",
         "jumpToPrevMonth": "Move backward to switch to the previous month.",
-        "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-        "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
         "keyboardShortcuts": "Keyboard Shortcuts",
         "leftArrowRightArrow": "Right and left arrow keys",
         "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
@@ -218,7 +210,6 @@ exports[`should render ExpenseFrom correctly with expense data 1`] = `
         "pageUpPageDown": "page up and page down keys",
         "questionMark": "Question mark",
         "returnFocusToInput": "Return to the date input field.",
-        "roleDescription": "datepicker",
         "selectFocusedDate": "Select the date in focus.",
         "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
         "upArrowDownArrow": "up and down arrow keys",
@@ -231,9 +222,6 @@ exports[`should render ExpenseFrom correctly with expense data 1`] = `
     renderDayContents={null}
     renderMonthElement={null}
     renderMonthText={null}
-    renderNavNextButton={null}
-    renderNavPrevButton={null}
-    renderWeekHeaderElement={null}
     reopenPickerOnClearDate={false}
     required={false}
     screenReaderInputMessage=""
@@ -295,7 +283,6 @@ exports[`should render error for invalid form submission 1`] = `
     customCloseIcon={null}
     customInputIcon={null}
     date={"1970-01-01T00:00:00.000Z"}
-    dayPickerNavigationInlineStyles={null}
     daySize={39}
     disableScroll={false}
     disabled={false}
@@ -317,7 +304,6 @@ exports[`should render error for invalid form submission 1`] = `
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
-    navPosition="navPositionTop"
     navPrev={null}
     noBorder={false}
     numberOfMonths={1}
@@ -342,8 +328,8 @@ exports[`should render error for invalid form submission 1`] = `
         "homeEnd": "Home and end keys",
         "jumpToNextMonth": "Move forward to switch to the next month.",
         "jumpToPrevMonth": "Move backward to switch to the previous month.",
-        "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-        "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
         "keyboardShortcuts": "Keyboard Shortcuts",
         "leftArrowRightArrow": "Right and left arrow keys",
         "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
@@ -354,7 +340,6 @@ exports[`should render error for invalid form submission 1`] = `
         "pageUpPageDown": "page up and page down keys",
         "questionMark": "Question mark",
         "returnFocusToInput": "Return to the date input field.",
-        "roleDescription": "datepicker",
         "selectFocusedDate": "Select the date in focus.",
         "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
         "upArrowDownArrow": "up and down arrow keys",
@@ -367,9 +352,6 @@ exports[`should render error for invalid form submission 1`] = `
     renderDayContents={null}
     renderMonthElement={null}
     renderMonthText={null}
-    renderNavNextButton={null}
-    renderNavPrevButton={null}
-    renderWeekHeaderElement={null}
     reopenPickerOnClearDate={false}
     required={false}
     screenReaderInputMessage=""
@@ -426,7 +408,6 @@ exports[`should set amount if valid input 1`] = `
     customCloseIcon={null}
     customInputIcon={null}
     date={"1970-01-01T00:00:00.000Z"}
-    dayPickerNavigationInlineStyles={null}
     daySize={39}
     disableScroll={false}
     disabled={false}
@@ -448,7 +429,6 @@ exports[`should set amount if valid input 1`] = `
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
-    navPosition="navPositionTop"
     navPrev={null}
     noBorder={false}
     numberOfMonths={1}
@@ -473,8 +453,8 @@ exports[`should set amount if valid input 1`] = `
         "homeEnd": "Home and end keys",
         "jumpToNextMonth": "Move forward to switch to the next month.",
         "jumpToPrevMonth": "Move backward to switch to the previous month.",
-        "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-        "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
         "keyboardShortcuts": "Keyboard Shortcuts",
         "leftArrowRightArrow": "Right and left arrow keys",
         "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
@@ -485,7 +465,6 @@ exports[`should set amount if valid input 1`] = `
         "pageUpPageDown": "page up and page down keys",
         "questionMark": "Question mark",
         "returnFocusToInput": "Return to the date input field.",
-        "roleDescription": "datepicker",
         "selectFocusedDate": "Select the date in focus.",
         "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
         "upArrowDownArrow": "up and down arrow keys",
@@ -498,9 +477,6 @@ exports[`should set amount if valid input 1`] = `
     renderDayContents={null}
     renderMonthElement={null}
     renderMonthText={null}
-    renderNavNextButton={null}
-    renderNavPrevButton={null}
-    renderWeekHeaderElement={null}
     reopenPickerOnClearDate={false}
     required={false}
     screenReaderInputMessage=""
@@ -557,7 +533,6 @@ exports[`should set amount if valid input 2`] = `
     customCloseIcon={null}
     customInputIcon={null}
     date={"1970-01-01T00:00:00.000Z"}
-    dayPickerNavigationInlineStyles={null}
     daySize={39}
     disableScroll={false}
     disabled={false}
@@ -579,7 +554,6 @@ exports[`should set amount if valid input 2`] = `
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
-    navPosition="navPositionTop"
     navPrev={null}
     noBorder={false}
     numberOfMonths={1}
@@ -604,8 +578,8 @@ exports[`should set amount if valid input 2`] = `
         "homeEnd": "Home and end keys",
         "jumpToNextMonth": "Move forward to switch to the next month.",
         "jumpToPrevMonth": "Move backward to switch to the previous month.",
-        "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-        "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
         "keyboardShortcuts": "Keyboard Shortcuts",
         "leftArrowRightArrow": "Right and left arrow keys",
         "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
@@ -616,7 +590,6 @@ exports[`should set amount if valid input 2`] = `
         "pageUpPageDown": "page up and page down keys",
         "questionMark": "Question mark",
         "returnFocusToInput": "Return to the date input field.",
-        "roleDescription": "datepicker",
         "selectFocusedDate": "Select the date in focus.",
         "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
         "upArrowDownArrow": "up and down arrow keys",
@@ -629,9 +602,6 @@ exports[`should set amount if valid input 2`] = `
     renderDayContents={null}
     renderMonthElement={null}
     renderMonthText={null}
-    renderNavNextButton={null}
-    renderNavPrevButton={null}
-    renderWeekHeaderElement={null}
     reopenPickerOnClearDate={false}
     required={false}
     screenReaderInputMessage=""
@@ -688,7 +658,6 @@ exports[`should set description on input change 1`] = `
     customCloseIcon={null}
     customInputIcon={null}
     date={"1970-01-01T00:00:00.000Z"}
-    dayPickerNavigationInlineStyles={null}
     daySize={39}
     disableScroll={false}
     disabled={false}
@@ -710,7 +679,6 @@ exports[`should set description on input change 1`] = `
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
-    navPosition="navPositionTop"
     navPrev={null}
     noBorder={false}
     numberOfMonths={1}
@@ -735,8 +703,8 @@ exports[`should set description on input change 1`] = `
         "homeEnd": "Home and end keys",
         "jumpToNextMonth": "Move forward to switch to the next month.",
         "jumpToPrevMonth": "Move backward to switch to the previous month.",
-        "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-        "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
         "keyboardShortcuts": "Keyboard Shortcuts",
         "leftArrowRightArrow": "Right and left arrow keys",
         "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
@@ -747,7 +715,6 @@ exports[`should set description on input change 1`] = `
         "pageUpPageDown": "page up and page down keys",
         "questionMark": "Question mark",
         "returnFocusToInput": "Return to the date input field.",
-        "roleDescription": "datepicker",
         "selectFocusedDate": "Select the date in focus.",
         "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
         "upArrowDownArrow": "up and down arrow keys",
@@ -760,9 +727,6 @@ exports[`should set description on input change 1`] = `
     renderDayContents={null}
     renderMonthElement={null}
     renderMonthText={null}
-    renderNavNextButton={null}
-    renderNavPrevButton={null}
-    renderWeekHeaderElement={null}
     reopenPickerOnClearDate={false}
     required={false}
     screenReaderInputMessage=""
@@ -819,7 +783,6 @@ exports[`should set note on textarea change 1`] = `
     customCloseIcon={null}
     customInputIcon={null}
     date={"1970-01-01T00:00:00.000Z"}
-    dayPickerNavigationInlineStyles={null}
     daySize={39}
     disableScroll={false}
     disabled={false}
@@ -841,7 +804,6 @@ exports[`should set note on textarea change 1`] = `
     keepOpenOnDateSelect={false}
     monthFormat="MMMM YYYY"
     navNext={null}
-    navPosition="navPositionTop"
     navPrev={null}
     noBorder={false}
     numberOfMonths={1}
@@ -866,8 +828,8 @@ exports[`should set note on textarea change 1`] = `
         "homeEnd": "Home and end keys",
         "jumpToNextMonth": "Move forward to switch to the next month.",
         "jumpToPrevMonth": "Move backward to switch to the previous month.",
-        "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-        "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
         "keyboardShortcuts": "Keyboard Shortcuts",
         "leftArrowRightArrow": "Right and left arrow keys",
         "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
@@ -878,7 +840,6 @@ exports[`should set note on textarea change 1`] = `
         "pageUpPageDown": "page up and page down keys",
         "questionMark": "Question mark",
         "returnFocusToInput": "Return to the date input field.",
-        "roleDescription": "datepicker",
         "selectFocusedDate": "Select the date in focus.",
         "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
         "upArrowDownArrow": "up and down arrow keys",
@@ -891,9 +852,6 @@ exports[`should set note on textarea change 1`] = `
     renderDayContents={null}
     renderMonthElement={null}
     renderMonthText={null}
-    renderNavNextButton={null}
-    renderNavPrevButton={null}
-    renderWeekHeaderElement={null}
     reopenPickerOnClearDate={false}
     required={false}
     screenReaderInputMessage=""

@@ -1,16 +1,10 @@
 {
     "presets": [
-        [
-            "@babel/preset-env",
-            {
-              "useBuiltIns": "entry"
-            }
-          ],
-          "@babel/preset-react"
+        "env",
+        "react"
     ],
     "plugins": [
-        "@babel/plugin-transform-runtime",
         "transform-class-properties",
-        "@babel/plugin-proposal-object-rest-spread"
+        "transform-object-rest-spread"
     ]
 }
