@@ -79,9 +79,7 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
     ],
-    "setupFilesAfterEnv": [
-      "jest-extended"
-    ]
+    "setupTestFrameworkScriptFile": "jest-extended"
   },
   "snyk": true
 }
