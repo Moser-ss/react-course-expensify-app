@@ -35,7 +35,7 @@
     "react-router-dom": "4.3.1",
     "redux": "4.0.0",
     "redux-thunk": "2.3.0",
-    "snyk": "1.369.1",
+    "snyk": "1.425.4",
     "uuid": "3.4.0"
   },
   "devDependencies": {
