@@ -46,7 +46,41 @@ patch:
         patched: '2021-07-29T19:55:26.237Z'
     - snyk > snyk-docker-plugin > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
         patched: '2021-07-29T19:55:26.237Z'
-    - css-loader > lodash:
-        patched: '2021-10-29T05:55:02.517Z'
-    - node-sass > lodash:
-        patched: '2021-10-29T05:55:02.517Z'
+    - webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > @jest/core > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > @jest/core > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > @jest/core > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > @jest/core > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
+    - jest > jest-cli > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2021-10-29T05:56:55.017Z'
