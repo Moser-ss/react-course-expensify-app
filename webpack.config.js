@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
 
@@ -9,12 +9,11 @@ if (process.env.NODE_ENV === ' test') {
 } else if (process.env.NODE_ENV === 'dev' ) {
   require('dotenv').config({ path: '.env.dev'})
 }
-module.exports = (env) => {
-  const isProduction = env === 'production';
-  const CSSExtract = new ExtractTextPlugin('styles.css');
+module.exports = (env, argv) => {
+  const isProduction = argv.mode === 'production';
 
   return {
-    entry: [ 'babel-polyfill' , './src/app.js'],
+    entry: [ '@babel/polyfill' , './src/app.js'],
     output: {
       path: path.join(__dirname, 'public', 'dist'),
       filename: 'bundle.js'
@@ -27,28 +26,12 @@ module.exports = (env) => {
         },
         {
           test: /\.s?css$/,
-          use: CSSExtract.extract({
-            use: [
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: true
-                }
-              },
-              {
-                loader: 'sass-loader',
-                options: {
-                  sourceMap: true
-                }
-              }
-              
-            ]
-          })
+          use: [MiniCssExtractPlugin.loader, "css-loader","sass-loader"],
         }
       ]
     },
     plugins: [
-      CSSExtract,
+      new MiniCssExtractPlugin(),
       new webpack.DefinePlugin({
         'process.env.FIREBASE_API_KEY':JSON.stringify(process.env.FIREBASE_API_KEY),
         'process.env.FIREBASE_AUTH_DOMAIN':JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
@@ -61,9 +44,13 @@ module.exports = (env) => {
     ],
     devtool:isProduction? 'source-map' :'inline-source-map',
     devServer: {
-      contentBase: path.join(__dirname, 'public'),
+      static:{
+        directory: path.join(__dirname, 'public'),
+      },
       historyApiFallback: true,
-      publicPath: '/dist/'
+      devMiddleware:{
+        publicPath: '/dist/',
+      }
     }
   }
 }
