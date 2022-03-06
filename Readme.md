@@ -12,3 +12,7 @@
  ### Snyk
 
  [![Known Vulnerabilities](https://snyk.io//test/github/Moser-ss/react-course-expensify-app/badge.svg?targetFile=package.json)](https://snyk.io//test/github/Moser-ss/react-course-expensify-app?targetFile=package.json)
+
+
+ TODO remove @babel/polyfill
+ https://stackoverflow.com/questions/57101261/webpack-package-babel-polyfill-has-been-deprecated-how-to-use-an-alternati
