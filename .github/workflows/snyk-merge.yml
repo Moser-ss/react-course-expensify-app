@@ -17,4 +17,4 @@ jobs:
           MERGE_RETRY_SLEEP: "10000"
           MERGE_FILTER_AUTHOR: "snyk-bot"
           MERGE_DELETE_BRANCH: true
-          # Sign the commit 6
+          # Sign the commit 7
